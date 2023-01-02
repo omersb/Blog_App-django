@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     # my apps
     'blog',
+    'user',
 
     # third party
     'rest_framework',
@@ -138,4 +139,5 @@ REST_FRAMEWORK = {
         'rest_framework.filters.SearchFilter',
         'rest_framework.filters.OrderingFilter'
     ],
+    'DEFAULT_AUTHENTICATION_CLASSES': ['rest_framework.authentication.TokenAuthentication'],
 }
